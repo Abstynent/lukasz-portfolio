@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===================
+======= HEADER =======
+=================== */
+header {
+    background-color: #2C74B3;
+    color: white;
+    padding-top: 25px;
+    border-bottom: 100px;
+    border-color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .portfolio {
+    color: lightgray;
+}
+
+header nav {
+    float: right;
+    padding-top: 15px;
+    margin-right: 20px;
+    font-size: 26px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #55b0ff;
+}
+
+/* ===================
+==== MAIN CONTENT ====
+=================== */
