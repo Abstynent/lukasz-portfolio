@@ -1,3 +1,9 @@
+:root {
+    --header-bgc: #020c1b;
+    --main-bgc: #112240;
+    --font-terminal-green: rgb(0, 215, 0);
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,39 +14,44 @@
 ======= HEADER =======
 =================== */
 header {
-    background-color: #2C74B3;
+    background-color: var(--main-bgc);
     color: white;
     padding-top: 25px;
-    border-bottom: 100px;
-    border-color: red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--font-mono);
 }
 
 header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 38px;
 }
 
 header h1 .portfolio {
     color: lightgray;
+    font-size: 24px;
 }
 
 header nav {
     float: right;
-    padding-top: 15px;
+    padding-top: 25px;
     margin-right: 20px;
-    font-size: 26px;
-
+    font-size: 16px;
 }
 
-header nav ul {
-    list-style-type: none;
+header nav ol {
+    counter-reset: item;
 }
 
-header nav ul li {
+header nav ol li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 10px;
 }
+
+header nav ol li::before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: var(--font-terminal-green);
+}
+
 
 header a {
     color: white;
@@ -48,9 +59,13 @@ header a {
 }
 
 header a:hover {
-    color: #55b0ff;
+    color: var(--font-terminal-green);
 }
 
 /* ===================
 ==== MAIN CONTENT ====
 =================== */
+main {
+    background-color: var(--main-bgc);
+    height: 100vh;
+}
