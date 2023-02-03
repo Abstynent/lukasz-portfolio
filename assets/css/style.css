@@ -20,7 +20,7 @@ header {
     background-color: var(--main-bgc);
     padding-left: 10px;
     color: var(--font-color-white);
-    padding-top: 25px;
+    padding-top: 15px;
     font-family: var(--font-mono);
 }
 
@@ -36,16 +36,21 @@ header h1 .portfolio {
 }
 
 header nav { /* going weird under 724px */
-    float: right;
+    display: inline-block;
+    width: 100%;
     background-color: var(--main-bgc);
     padding-top: 25px;
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 16px;
     min-width: 100px;
 }
 
 header nav ol {
+    position: relative;
+    padding-top: inherit;
+    float: right;
     counter-reset: item;
+    align-items: center;
 }
 
 header nav ol li {
@@ -117,17 +122,6 @@ article {
     -webkit-filter: blur(4px);
 }
 
-.secondary-work {
-    display: block;
-}
-
-.secondary-work img {
-    width: 33%;
-    height: 100px;
-    padding-right: 10px;
-}
-
-/* NO IDEA WHY PICTURE DONT WONT TO SCALE */
 /* ===================
 ==== SIDE CONTENT ====
 =================== */
