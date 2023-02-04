@@ -14,14 +14,16 @@
     margin: 0;
 }
 
+/* p {
+    text-indent: 1.5em;
+} */
 /* ===================
 ======= HEADER =======
 =================== */
 header {
     background-color: var(--main-bgc);
-    padding-left: 10px;
+    padding: 15px 0px 30px 10px;
     color: var(--font-color-white);
-    padding-top: 15px;
     font-family: var(--font-mono);
 }
 
@@ -60,7 +62,7 @@ header nav ol li {
 }
 
 header nav ol li::before {
-    content: counter(item) ". ";
+    content: "0" counter(item) ". ";
     counter-increment: item;
     color: var(--font-terminal-green);
 }
@@ -85,12 +87,11 @@ main {
 
 .paragraph {
     width: 100%;
-    padding: 30px 100px 20px 25px;
+    padding: 30px 100px 0px 25px;
     display: flex;
 }
 
 .article-title {
-    display: inline-block;
     float: right;
     width: 9%;
     margin-right: 1%;
@@ -99,14 +100,15 @@ main {
 }
 
 .article-title h2 {
-    float: right;
     margin-right: 10px;
     color: var(--font-color-slate);
+    text-align: right;
 }
 
 .article-content {
     width: 100%;
-    float: right;
+    display: flex;
+    /* float: right; */
     color: var(--font-color-white);
 }
 
@@ -142,9 +144,21 @@ main {
     height: 200px;
     /* justify-content: space-around;
     align-items: center; */
-    margin-right: 50px;
+    /* margin-right: 50px; */
     filter: grayscale(100%);
 }
+
+.contact-me {
+    justify-content: space-around;
+    align-items: flex-end;
+}
 /* ===================
-==== SIDE CONTENT ====
+======= FOOTER =======
 =================== */
+
+footer {
+    padding-top: 10px;
+    background-color: var(--main-bgc);
+    color: var(--font-color-white);
+    text-align: center;
+}
