@@ -18,6 +18,7 @@
 a {
     color: var(--col);
     text-decoration: none;
+    width: 100%;
 }
 
 a:hover {
@@ -110,7 +111,7 @@ main {
 .article-content {
     width: 100%;
     display: flex;
-    /* float: right; */
+    float: left;
     color: var(--font-color-white);
 }
 
@@ -123,6 +124,12 @@ main {
 
 .article-content img:hover {
     filter: blur(4px) grayscale(100%);
+}
+
+.avatar img {
+    margin-right: 25px;
+    width: 100px;
+    height: 100px;
 }
 
 .container {
