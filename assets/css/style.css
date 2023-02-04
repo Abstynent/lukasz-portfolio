@@ -15,12 +15,22 @@
     background-color: var(--main-bgc);
 }
 
+a {
+    color: var(--col);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--font-terminal-green);
+} 
+
 /* p {
     text-indent: 1.5em;
 } */
 /* ===================
 ======= HEADER =======
 =================== */
+
 header {
     background-color: var(--main-bgc);
     padding: 15px 0px 30px 10px;
@@ -67,16 +77,6 @@ header nav ol li::before {
     counter-increment: item;
     color: var(--font-terminal-green);
 }
-
-header a {
-    color: var(--col);
-    text-decoration: none;
-}
-
-header a:hover {
-    color: var(--font-terminal-green);
-} 
-
 /* ===================
 ==== MAIN CONTENT ====
 =================== */
@@ -94,6 +94,7 @@ main {
 
 .article-title {
     float: right;
+    overflow-wrap: break-word;
     width: 9%;
     margin-right: 1%;
     color: var(--font-color-slate);
@@ -132,9 +133,11 @@ main {
 
 .top-left {
     position: absolute;
+    background-color: transparent;
     top: 8px;
     left: 16px;
     font-size: 42px;
+
 }
 .article-content .secondary-work {
     /* display: flex; */
@@ -158,11 +161,35 @@ main {
 =================== */
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    padding-top: 2.5rem;
     background-color: var(--main-bgc);
     color: var(--font-color-white);
     text-align: center;
+}
+
+/* ===================
+======= MEDIAQ =======
+=================== */
+
+@media screen and (max-width: 992px) {
+    .article-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .article-content img {
+        width: 400px;
+        height: 200px;
+    }
+    
+    .top-left {
+        display: none;
+    }
+
+    .contact-section {
+        padding-right: 20px;
+    }
 }
