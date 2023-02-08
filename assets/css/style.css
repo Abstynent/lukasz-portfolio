@@ -1,3 +1,4 @@
+/* GLOBAL VARIABLES */
 :root {
     --main-bgc: #112240;
     --font-terminal-green: rgb(0, 215, 0);
@@ -5,7 +6,7 @@
     --font-color-white: #e6f1ff;
     --font-color-slate: #a8b2d1;
 }
-
+/* GLOBAL RULES */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -42,6 +43,7 @@ header nav {
 header h1 {
     display: inline-block;
     font-size: 38px;
+    padding-left: 1%;
 }
 
 header h1 .portfolio {
